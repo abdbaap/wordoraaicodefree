@@ -29,13 +29,13 @@
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6836466532865002" crossorigin="anonymous"></script>
 
-    <meta name="description" content="Discover the best free and almost-free AI tools for code generation, offering expert-level results for developers.">
-    <meta name="keywords" content="AI code generation, free AI coding tools, code creation, Code Llama, StarCoder, CodeGeeX, DeepSeek Coder, Replit AI, Codeium, Amazon CodeWhisperer, Gemini Code Assist, ChatGPT, Cursor AI, AI developer tools">
+    <meta name="description" content="Discover the best free and almost-free AI code generation tools, offering expert-level results for developers.">
+    <meta name="keywords" content="AI code generation, free AI code tools, GitHub Copilot, Codeium, Amazon CodeWhisperer, Gemini Code Assist, Cursor AI, Replit AI, ChatGPT Code, Code Llama, StarCoder, DeepSeek Coder, AI development, code assistance">
     <meta name="author" content="Wordora">
 
     <meta property="og:title" content="Cutting-Edge Free AI Code Generation Tools | Wordora">
-    <meta property="og:description" content="Explore top-tier free and almost-free AI tools for code generation, perfect for achieving professional results.">
-    <meta property="og:image" content="image (16).webp"> <!-- Main image for code generation section -->
+    <meta property="og:description" content="Explore top-tier free and almost-free AI code generation tools, perfect for achieving professional results.">
+    <meta property="og:image" content="image (1).webp"> <!-- Main image for general AI tools section -->
     <meta property="og:url" content="https://wordora.vercel.app/">
     <meta property="og:type" content="website">
     <link rel="icon" href="/favicon.ico" type="image/x-x-icon">
@@ -164,6 +164,14 @@
             transform: scale(1);
         }
 
+        /* General image styling for better rendering and avoiding blurriness */
+        img {
+            max-width: 100%;
+            height: auto; /* Ensures aspect ratio is maintained */
+            display: block; /* Removes extra space below images */
+            image-rendering: auto; /* Standard rendering */
+        }
+
         /* Neon green text color (retained for specific uses if needed) */
         .neon-green-text {
             color: #39FF14; /* A vibrant neon green */
@@ -189,7 +197,7 @@
             </a>
             <div class="hidden md:flex md:space-x-4 lg:space-x-8 text-sm md:text-base">
                 <a href="#home" class="text-gray-200 hover:text-neon-blue-green-text transition duration-300 font-medium whitespace-nowrap">Home</a>
-                <!-- Link changed from video tools to code generation tools -->
+                <!-- Link changed to AI Code Generation Tools -->
                 <a href="#ai-code-generation-tools" class="text-gray-200 hover:text-neon-blue-green-text transition duration-300 font-medium whitespace-nowrap">AI Code Generation Tools</a>
                 <a href="#our-websites" class="text-gray-200 hover:text-neon-blue-green-text transition duration-300 font-medium whitespace-nowrap">Our Websites</a>
                 <a href="#start-journey" class="text-gray-200 hover:text-neon-blue-green-text transition duration-300 font-medium whitespace-nowrap">Start Journey</a>
@@ -201,7 +209,7 @@
         </div>
         <div id="mobile-menu" class="hidden md:hidden bg-gray-800 px-4 pt-2 pb-4 space-y-2">
             <a href="#home" class="block text-gray-200 hover:text-neon-blue-green-text transition duration-300 font-medium py-2">Home</a>
-            <!-- Link changed from video tools to code generation tools -->
+            <!-- Link changed to AI Code Generation Tools -->
             <a href="#ai-code-generation-tools" class="block text-gray-200 hover:text-neon-blue-green-text transition duration-300 font-medium py-2">AI Code Generation Tools</a>
             <a href="#our-websites" class="block text-gray-200 hover:text-neon-blue-green-text transition duration-300 font-medium py-2">Our Websites</a>
             <a href="#start-journey" class="block text-gray-200 hover:text-neon-blue-green-text transition duration-300 font-medium py-2">Start Journey</a>
@@ -219,84 +227,32 @@
                 Cutting-Edge Free AI Code Generation Tools <span class="neon-green-text">&#x2728; Wordora</span>
             </h1>
             <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8 animate-fade-in-up delay-200">
-                You're looking for the best of both worlds – expert-level results from free or almost-free AI tools.
-                Discover powerful AI code generation platforms that empower developers, data scientists, and innovators to produce stunning and efficient code with minimal cost.
+                You're looking for the best of both worlds – expert-level results from free or almost-free AI code generation tools.
+                Discover powerful AI platforms that empower developers and innovators to produce efficient and high-quality code with minimal cost.
             </p>
             <a href="#ai-code-generation-tools"
                class="inline-block bg-cyan-600 text-gray-900 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-cyan-500 transform hover:scale-105 transition duration-300 ease-in-out animate-fade-in-up delay-400">
-                Explore Tools <i class="fas fa-robot ml-2"></i>
+                Explore Tools <i class="fas fa-code ml-2"></i>
             </a>
         </div>
     </header>
 
     <main class="container mx-auto px-4 py-12 md:py-16">
 
-        <!-- AI Code Generation Tools Section (moved to top) -->
+        <!-- AI Code Generation Tools Section -->
         <section id="ai-code-generation-tools" class="mb-16 animate-on-scroll">
             <h2 class="text-3xl md:text-4xl font-bold text-neon-blue-green-text mb-8 text-center">Free & Extremely Powerful AI Code Generation Tools</h2>
-            <h3 class="text-xl md:text-2xl font-semibold text-neon-blue-green-text mb-8 text-center">Boost Your Development Workflow with AI!</h3>
+            <h3 class="text-xl md:text-2xl font-semibold text-neon-blue-green-text mb-8 text-center">Boost Your Productivity with AI-Generated Code!</h3>
 
-            <!-- Code Llama -->
+            <!-- GitHub Copilot -->
             <div class="bg-gray-800 p-6 rounded-lg shadow-xl flex flex-col md:flex-row items-center mb-8">
                 <div class="md:w-1/2 md:pr-8 mb-6 md:mb-0">
-                    <img id="codeLlama-image" src="image (16).webp" alt="Code Llama Interface" class="rounded-lg shadow-md w-full h-64 md:h-96 object-cover animate-image-on-scroll" onerror="this.onerror=null;this.src='https://placehold.co/800x450/2d3748/00FFFF?text=Code+Llama+Image';">
+                    <img id="githubCopilot-image" src="image (1).webp" alt="GitHub Copilot Interface" class="rounded-lg shadow-md w-full h-64 md:h-96 object-cover animate-image-on-scroll" onerror="this.onerror=null;this.src='https://placehold.co/800x450/2d3748/00FFFF?text=GitHub+Copilot';">
                 </div>
                 <div class="md:w-1/2">
-                    <h4 class="text-2xl font-semibold text-neon-blue-green-text mb-3">Code Llama (Meta AI)</h4>
+                    <h4 class="text-2xl font-semibold text-neon-blue-green-text mb-3">GitHub Copilot</h4>
                     <h5 class="text-lg text-gray-300 mb-4 leading-relaxed">
-                        Code Llama is an open-source large language model (LLM) developed by Meta AI, specifically designed for code generation and understanding. It can generate code from natural language prompts, complete code, debug, and even explain existing code. Being open-source, it offers unparalleled flexibility and can be deployed locally or on cloud infrastructure, providing developers with full control over their coding environment without recurring costs. Its various versions, including specialized ones for Python and instruction-following, make it a versatile tool for a wide range of programming tasks.
-                    </h5>
-                </div>
-            </div>
-
-            <!-- StarCoder -->
-            <div class="bg-gray-800 p-6 rounded-lg shadow-xl flex flex-col md:flex-row-reverse items-center mb-8">
-                <div class="md:w-1/2 md:pl-8 mb-6 md:mb-0">
-                    <img id="starCoder-image" src="image (17).webp" alt="StarCoder Interface" class="rounded-lg shadow-md w-full h-64 md:h-96 object-cover animate-image-on-scroll" onerror="this.onerror=null;this.src='https://placehold.co/800x450/2d3748/00FFFF?text=StarCoder+Image';">
-                </div>
-                <div class="md:w-1/2">
-                    <h4 class="text-2xl font-semibold text-neon-blue-green-text mb-3">StarCoder (Hugging Face / BigCode)</h4>
-                    <h5 class="text-lg text-gray-300 mb-4 leading-relaxed">
-                        StarCoder is a powerful open-source code generation model from the BigCode project, a collaboration between Hugging Face and ServiceNow. It's trained on a massive dataset of permissively licensed code from GitHub, making it highly effective for generating code in numerous programming languages. Like Code Llama, it can be hosted locally or on various cloud platforms, offering developers a free and customizable solution for code completion, generation, and summarization. Its focus on security and transparency makes it a reliable choice for enterprise and individual use.
-                    </h5>
-                </div>
-            </div>
-
-            <!-- CodeGeeX -->
-            <div class="bg-gray-800 p-6 rounded-lg shadow-xl flex flex-col md:flex-row items-center mb-8">
-                <div class="md:w-1/2 md:pr-8 mb-6 md:mb-0">
-                    <img id="codeGeeX-image" src="image (18).webp" alt="CodeGeeX Interface" class="rounded-lg shadow-md w-full h-64 md:h-96 object-cover animate-image-on-scroll" onerror="this.onerror=null;this.src='https://placehold.co/800x450/2d3748/00FFFF?text=CodeGeeX+Image';">
-                </div>
-                <div class="md:w-1/2">
-                    <h4 class="text-2xl font-semibold text-neon-blue-green-text mb-3">CodeGeeX (Tsinghua University)</h4>
-                    <h5 class="text-lg text-gray-300 mb-4 leading-relaxed">
-                        CodeGeeX is an open-source multilingual code generation model developed by Tsinghua University. It supports multiple programming languages and can perform various tasks such as code generation, translation, and explanation. Being open-source, it provides a free-to-use platform for developers to enhance their coding efficiency. It's particularly useful for researchers and developers working on projects requiring code generation across different languages or in environments where local deployment is preferred for privacy and cost control.
-                    </h5>
-                </div>
-            </div>
-
-            <!-- DeepSeek Coder -->
-            <div class="bg-gray-800 p-6 rounded-lg shadow-xl flex flex-col md:flex-row-reverse items-center mb-8">
-                <div class="md:w-1/2 md:pl-8 mb-6 md:mb-0">
-                    <img id="deepSeekCoder-image" src="image (19).webp" alt="DeepSeek Coder Interface" class="rounded-lg shadow-md w-full h-64 md:h-96 object-cover animate-image-on-scroll" onerror="this.onerror=null;this.src='https://placehold.co/800x450/2d3748/00FFFF?text=DeepSeek+Coder+Image';">
-                </div>
-                <div class="md:w-1/2">
-                    <h4 class="text-2xl font-semibold text-neon-blue-green-text mb-3">DeepSeek Coder (Open-source models)</h4>
-                    <h5 class="text-lg text-gray-300 mb-4 leading-relaxed">
-                        DeepSeek Coder is a series of open-source code models that excel in various coding tasks, including code completion, generation, and debugging. These models are designed for high performance and flexibility, allowing developers to integrate them into their local development environments. Their open-source nature means developers can leverage powerful AI capabilities without subscription fees, ensuring privacy and complete control over their code. DeepSeek Coder is ideal for those who prefer to keep their development workflow self-contained and highly customizable.
-                    </h5>
-                </div>
-            </div>
-
-            <!-- Replit AI Free Tier -->
-            <div class="bg-gray-800 p-6 rounded-lg shadow-xl flex flex-col md:flex-row items-center mb-8">
-                <div class="md:w-1/2 md:pr-8 mb-6 md:mb-0">
-                    <img id="replitAIFreeTier-image" src="image (20).webp" alt="Replit AI Interface" class="rounded-lg shadow-md w-full h-64 md:h-96 object-cover animate-image-on-scroll" onerror="this.onerror=null;this.src='https://placehold.co/800x450/2d3748/00FFFF?text=Replit+AI+Image';">
-                </div>
-                <div class="md:w-1/2">
-                    <h4 class="text-2xl font-semibold text-neon-blue-green-text mb-3">Replit AI Free Tier</h4>
-                    <h5 class="text-lg text-gray-300 mb-4 leading-relaxed">
-                        Replit AI offers a generous free tier for its online integrated development environment (IDE) with AI-powered coding features. It's an excellent choice for learning, rapid prototyping, and collaborative coding directly in the browser. The AI capabilities assist with code completion, bug fixing, and generating code snippets, making it highly accessible for beginners and experienced developers alike. While it's an online platform, its free tier provides substantial utility for individual projects without needing local setup or extensive configuration.
+                        GitHub Copilot is an AI pair programmer developed by GitHub and OpenAI that helps developers write code faster and more efficiently. It provides suggestions for entire lines or functions directly within the editor. Trained on a vast amount of public code, Copilot can understand context and generate boilerplate code, suggest algorithms, and even write tests, significantly boosting productivity for individual developers and teams.
                     </h5>
                 </div>
             </div>
@@ -304,12 +260,12 @@
             <!-- Codeium -->
             <div class="bg-gray-800 p-6 rounded-lg shadow-xl flex flex-col md:flex-row-reverse items-center mb-8">
                 <div class="md:w-1/2 md:pl-8 mb-6 md:mb-0">
-                    <img id="codeium-image" src="image (21).webp" alt="Codeium Interface" class="rounded-lg shadow-md w-full h-64 md:h-96 object-cover animate-image-on-scroll" onerror="this.onerror=null;this.src='https://placehold.co/800x450/2d3748/00FFFF?text=Codeium+Image';">
+                    <img id="codeium-image" src="image (2).webp" alt="Codeium Interface" class="rounded-lg shadow-md w-full h-64 md:h-96 object-cover animate-image-on-scroll" onerror="this.onerror=null;this.src='https://placehold.co/800x450/2d3748/00FFFF?text=Codeium';">
                 </div>
                 <div class="md:w-1/2">
                     <h4 class="text-2xl font-semibold text-neon-blue-green-text mb-3">Codeium</h4>
                     <h5 class="text-lg text-gray-300 mb-4 leading-relaxed">
-                        Codeium provides a robust AI-powered code completion and generation tool with a very generous free tier for individual developers. It integrates seamlessly with popular IDEs, offering intelligent suggestions, boilerplate code generation, and even complex function completions based on context. Its high performance and broad language support make it a valuable asset for speeding up development. Codeium is an excellent choice for developers seeking a powerful and free AI coding assistant that feels native to their existing workflow.
+                        Codeium is a free AI-powered code completion and chat tool designed for developers. It offers intelligent code suggestions, generates functions from natural language comments, and can refactor code. Codeium supports over 70 programming languages and integrates with popular IDEs, providing a powerful and accessible solution for developers looking to enhance their coding speed and quality without a subscription cost.
                     </h5>
                 </div>
             </div>
@@ -317,51 +273,103 @@
             <!-- Amazon CodeWhisperer -->
             <div class="bg-gray-800 p-6 rounded-lg shadow-xl flex flex-col md:flex-row items-center mb-8">
                 <div class="md:w-1/2 md:pr-8 mb-6 md:mb-0">
-                    <img id="amazonCodeWhisperer-image" src="image (22).webp" alt="Amazon CodeWhisperer Interface" class="rounded-lg shadow-md w-full h-64 md:h-96 object-cover animate-image-on-scroll" onerror="this.onerror=null;this.src='https://placehold.co/800x450/2d3748/00FFFF?text=AWS+CodeWhisperer+Image';">
+                    <img id="amazonCodeWhisperer-image" src="image (3).webp" alt="Amazon CodeWhisperer Interface" class="rounded-lg shadow-md w-full h-64 md:h-96 object-cover animate-image-on-scroll" onerror="this.onerror=null;this.src='https://placehold.co/800x450/2d3748/00FFFF?text=Amazon+CodeWhisperer';">
                 </div>
                 <div class="md:w-1/2">
                     <h4 class="text-2xl font-semibold text-neon-blue-green-text mb-3">Amazon CodeWhisperer</h4>
                     <h5 class="text-lg text-gray-300 mb-4 leading-relaxed">
-                        Amazon CodeWhisperer is an AI coding companion that provides real-time code recommendations directly in your IDE. It's free for individual developers and is particularly strong for those working within the AWS ecosystem, offering suggestions for AWS APIs and best practices. CodeWhisperer supports multiple programming languages and can significantly accelerate development by generating full functions or even entire files from natural language comments. Its seamless integration and focus on cloud development make it a powerful tool for productivity.
+                        Amazon CodeWhisperer is a generative AI-powered coding companion that generates real-time code recommendations in IDEs. It's trained on billions of lines of code, Amazon's own code, open-source code, and public data. CodeWhisperer can suggest code snippets, entire functions, and even security vulnerability scanning, making it a valuable tool for developers working on cloud-native applications and beyond.
                     </h5>
                 </div>
             </div>
 
-            <!-- Gemini (via Google AI Studio / Gemini Code Assist) -->
+            <!-- Gemini Code Assist -->
             <div class="bg-gray-800 p-6 rounded-lg shadow-xl flex flex-col md:flex-row-reverse items-center mb-8">
                 <div class="md:w-1/2 md:pl-8 mb-6 md:mb-0">
-                    <img id="geminiAI-image" src="image (23).webp" alt="Gemini AI Interface" class="rounded-lg shadow-md w-full h-64 md:h-96 object-cover animate-image-on-scroll" onerror="this.onerror=null;this.src='https://placehold.co/800x450/2d3748/00FFFF?text=Gemini+AI+Image';">
+                    <img id="geminiCodeAssist-image" src="image (4).webp" alt="Gemini Code Assist Interface" class="rounded-lg shadow-md w-full h-64 md:h-96 object-cover animate-image-on-scroll" onerror="this.onerror=null;this.src='https://placehold.co/800x450/2d3748/00FFFF?text=Gemini+Code+Assist';">
                 </div>
                 <div class="md:w-1/2">
-                    <h4 class="text-2xl font-semibold text-neon-blue-green-text mb-3">Gemini (via Google AI Studio / Gemini Code Assist)</h4>
+                    <h4 class="text-2xl font-semibold text-neon-blue-green-text mb-3">Gemini Code Assist</h4>
                     <h5 class="text-lg text-gray-300 mb-4 leading-relaxed">
-                        Gemini, Google's flagship AI model, offers powerful code generation capabilities accessible through Google AI Studio (for API access with a free tier and rate limits) and Gemini Code Assist (for individuals, with substantial free daily usage within IDEs like VS Code and JetBrains). Gemini can generate high-quality code across various languages, explain complex concepts, and assist in debugging. While the core models are incredibly powerful, its "almost free" status stems from the generous free tiers that cater to individual developers, with options for paid upgrades for higher limits or enterprise features. It's an excellent choice for those who need cutting-edge AI assistance in their coding workflow.
-                    </h5>
-                </div>
-            </div>
-
-            <!-- ChatGPT (Free Tier) -->
-            <div class="bg-gray-800 p-6 rounded-lg shadow-xl flex flex-col md:flex-row items-center mb-8">
-                <div class="md:w-1/2 md:pr-8 mb-6 md:mb-0">
-                    <img id="chatGPT-image" src="image (24).webp" alt="ChatGPT Interface" class="rounded-lg shadow-md w-full h-64 md:h-96 object-cover animate-image-on-scroll" onerror="this.onerror=null;this.src='https://placehold.co/800x450/2d3748/00FFFF?text=ChatGPT+Image';">
-                </div>
-                <div class="md:w-1/2">
-                    <h4 class="text-2xl font-semibold text-neon-blue-green-text mb-3">ChatGPT (Free Tier)</h4>
-                    <h5 class="text-lg text-gray-300 mb-4 leading-relaxed">
-                        ChatGPT, in its free tier, remains a highly versatile and valuable tool for general code generation, explanations, and debugging. While not a dedicated IDE assistant like some others on this list, its ability to understand complex natural language prompts and generate coherent, often runnable code snippets is unmatched for many basic and intermediate coding tasks. It's excellent for quickly understanding new concepts, getting started with unfamiliar libraries, or solving discrete programming problems. It serves as a powerful conversational AI assistant that can significantly aid a developer's learning and problem-solving process.
+                        Gemini Code Assist (formerly Google Cloud Code) is an AI-powered coding assistant for Google Cloud developers. Leveraging Google's advanced Gemini models, it provides intelligent code completion, code generation from natural language, and debugging assistance. It's designed to streamline the development process for cloud applications, offering deep integration with Google Cloud services and improving developer productivity.
                     </h5>
                 </div>
             </div>
 
             <!-- Cursor -->
-            <div class="bg-gray-800 p-6 rounded-lg shadow-xl flex flex-col md:flex-row-reverse items-center mb-8">
-                <div class="md:w-1/2 md:pl-8 mb-6 md:mb-0">
-                    <img id="cursorAI-image" src="image (25).webp" alt="Cursor AI Interface" class="rounded-lg shadow-md w-full h-64 md:h-96 object-cover animate-image-on-scroll" onerror="this.onerror=null;this.src='https://placehold.co/800x450/2d3748/00FFFF?text=Cursor+AI+Image';">
+            <div class="bg-gray-800 p-6 rounded-lg shadow-xl flex flex-col md:flex-row items-center mb-8">
+                <div class="md:w-1/2 md:pr-8 mb-6 md:mb-0">
+                    <img id="cursor-image" src="image (5).webp" alt="Cursor Interface" class="rounded-lg shadow-md w-full h-64 md:h-96 object-cover animate-image-on-scroll" onerror="this.onerror=null;this.src='https://placehold.co/800x450/2d3748/00FFFF?text=Cursor';">
                 </div>
                 <div class="md:w-1/2">
-                    <h4 class="text-2xl font-semibold text-neon-blue-green-text mb-3">Cursor (AI-powered Code Editor)</h4>
+                    <h4 class="text-2xl font-semibold text-neon-blue-green-text mb-3">Cursor</h4>
                     <h5 class="text-lg text-gray-300 mb-4 leading-relaxed">
-                        Cursor is an AI-powered code editor built from the ground up to integrate AI into every aspect of coding. Its strong free features for individuals include AI chat, code generation, and intelligent editing capabilities directly within the editor. Cursor allows developers to "ask AI" questions about their code, generate new files, or refactor existing ones with ease. It aims to fundamentally change how developers interact with their codebase by providing a deeply integrated AI experience. It's a great option for those looking for an IDE specifically designed around AI-assisted development.
+                        Cursor is an AI-first code editor built to help developers write, edit, and understand code with the power of large language models. It offers features like AI chat directly within the editor, "edit code" commands based on natural language, and deep code understanding. Cursor aims to revolutionize the coding experience by making AI an integral part of every development task, providing a highly intelligent coding environment.
+                    </h5>
+                </div>
+            </div>
+
+            <!-- Replit AI -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-xl flex flex-col md:flex-row-reverse items-center mb-8">
+                <div class="md:w-1/2 md:pl-8 mb-6 md:mb-0">
+                    <img id="replitAI-image" src="image (6).webp" alt="Replit AI Interface" class="rounded-lg shadow-md w-full h-64 md:h-96 object-cover animate-image-on-scroll" onerror="this.onerror=null;this.src='https://placehold.co/800x450/2d3748/00FFFF?text=Replit+AI';">
+                </div>
+                <div class="md:w-1/2">
+                    <h4 class="text-2xl font-semibold text-neon-blue-green-text mb-3">Replit AI</h4>
+                    <h5 class="text-lg text-gray-300 mb-4 leading-relaxed">
+                        Replit AI integrates powerful AI capabilities directly into the Replit online IDE. It provides features like code completion, code generation, debugging assistance, and even natural language to code transformation. Replit's environment is particularly popular for learning, prototyping, and collaborative coding, and its AI features further democratize access to advanced programming tools, making coding more accessible and efficient for users of all skill levels.
+                    </h5>
+                </div>
+            </div>
+
+            <!-- ChatGPT (for code) -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-xl flex flex-col md:flex-row items-center mb-8">
+                <div class="md:w-1/2 md:pr-8 mb-6 md:mb-0">
+                    <img id="chatGPT-code-image" src="image (7).webp" alt="ChatGPT Interface for Code" class="rounded-lg shadow-md w-full h-64 md:h-96 object-cover animate-image-on-scroll" onerror="this.onerror=null;this.src='https://placehold.co/800x450/2d3748/00FFFF?text=ChatGPT+Code';">
+                </div>
+                <div class="md:w-1/2">
+                    <h4 class="text-2xl font-semibold text-neon-blue-green-text mb-3">ChatGPT (for code)</h4>
+                    <h5 class="text-lg text-gray-300 mb-4 leading-relaxed">
+                        ChatGPT, OpenAI's conversational AI, is highly versatile and can be used as a powerful code generation and debugging assistant. Developers can ask it to generate code snippets, explain complex concepts, debug errors, and even refactor existing code in various programming languages. While not a dedicated IDE plugin, its ability to understand and generate human-like text makes it an invaluable tool for quickly getting code examples, understanding documentation, and problem-solving.
+                    </h5>
+                </div>
+            </div>
+
+            <!-- Code Llama -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-xl flex flex-col md:flex-row-reverse items-center mb-8">
+                <div class="md:w-1/2 md:pl-8 mb-6 md:mb-0">
+                    <img id="codeLlama-image" src="image (8).webp" alt="Code Llama Interface" class="rounded-lg shadow-md w-full h-64 md:h-96 object-cover animate-image-on-scroll" onerror="this.onerror=null;this.src='https://placehold.co/800x450/2d3748/00FFFF?text=Code+Llama';">
+                </div>
+                <div class="md:w-1/2">
+                    <h4 class="text-2xl font-semibold text-neon-blue-green-text mb-3">Code Llama</h4>
+                    <h5 class="text-lg text-gray-300 mb-4 leading-relaxed">
+                        Code Llama is a large language model from Meta designed specifically for coding tasks. It can generate code, answer questions about code, and debug existing code. Available in various sizes and specialized versions (like Python-specific or Instruct models), Code Llama is an open-source option that can be self-hosted, providing developers with powerful code generation capabilities that can be fine-tuned for specific needs, offering flexibility and control.
+                    </h5>
+                </div>
+            </div>
+
+            <!-- StarCoder -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-xl flex flex-col md:flex-row items-center mb-8">
+                <div class="md:w-1/2 md:pr-8 mb-6 md:mb-0">
+                    <img id="starCoder-image" src="image (9).webp" alt="StarCoder Interface" class="rounded-lg shadow-md w-full h-64 md:h-96 object-cover animate-image-on-scroll" onerror="this.onerror=null;this.src='https://placehold.co/800x450/2d3748/00FFFF?text=StarCoder';">
+                </div>
+                <div class="md:w-1/2">
+                    <h4 class="text-2xl font-semibold text-neon-blue-green-text mb-3">StarCoder</h4>
+                    <h5 class="text-lg text-gray-300 mb-4 leading-relaxed">
+                        StarCoder is an open-source large language model for code, developed by Hugging Face and ServiceNow. It's trained on a massive dataset of code from GitHub, covering multiple programming languages. StarCoder excels at code completion, generation, and summarization. Its open nature allows researchers and developers to build upon it, making it a foundational model for innovative AI coding tools and offering powerful capabilities for various software development tasks.
+                    </h5>
+                </div>
+            </div>
+
+            <!-- DeepSeek Coder -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-xl flex flex-col md:flex-row-reverse items-center mb-8">
+                <div class="md:w-1/2 md:pl-8 mb-6 md:mb-0">
+                    <img id="deepSeekCoder-image" src="image (10).webp" alt="DeepSeek Coder Interface" class="rounded-lg shadow-md w-full h-64 md:h-96 object-cover animate-image-on-scroll" onerror="this.onerror=null;this.src='https://placehold.co/800x450/2d3748/00FFFF?text=DeepSeek+Coder';">
+                </div>
+                <div class="md:w-1/2">
+                    <h4 class="text-2xl font-semibold text-neon-blue-green-text mb-3">DeepSeek Coder</h4>
+                    <h5 class="text-lg text-gray-300 mb-4 leading-relaxed">
+                        DeepSeek Coder is a series of open-source code language models developed by DeepSeek-AI, optimized for various coding tasks. These models demonstrate strong performance in code completion, natural language to code generation, and debugging. Available in different sizes, DeepSeek Coder provides robust capabilities for developers who prefer open-source solutions and are looking for powerful AI assistance to write and manage code more efficiently across a wide range of programming contexts.
                     </h5>
                 </div>
             </div>
@@ -471,16 +479,16 @@
                 <div class="comment-display-area" id="comments-list">
                     <h3 class="text-xl font-semibold text-neon-blue-green-text mb-4">Recent Comments</h3>
                     <div class="comment-item">
-                        <p class="comment-author">Code Enthusiast</p>
-                        <p class="comment-text">These AI coding tools are a game-changer!</p>
+                        <p class="comment-author">AI Code Enthusiast</p>
+                        <p class="comment-text">These code generators are amazing!</p>
                     </div>
                     <div class="comment-item">
                         <p class="comment-author">Developer</p>
-                        <p class="comment-text">Great overview of free and almost-free options. Thanks!</p>
+                        <p class="comment-text">Great resource for free and almost-free AI coding tools. Thank you!</p>
                     </div>
                     <div class="comment-item">
-                        <p class="comment-author">AI Learner</p>
-                        <p class="comment-text">Excited to try Gemini Code Assist!</p>
+                        <p class="comment-author">Programmer</p>
+                        <p class="comment-text">Looking forward to trying GitHub Copilot!</p>
                     </div>
                 </div>
             </div>
@@ -523,18 +531,21 @@
             // Image array for all sections
             const allImages = {
                 heroBackground: "", // No image for hero background as requested
-                // Images for "AI Code Generation Tools" section
-                codeLlama: "image (1).webp",
-                starCoder: "image (2).webp",
-                codeGeeX: "image (3).webp",
-                deepSeekCoder: "image (4).webp",
-                replitAIFreeTier: "image (5).webp",
-                codeium: "image (6).webp",
-                amazonCodeWhisperer: "image (7).webp",
-                geminiAI: "image (8).webp",
-                chatGPT: "image (9).webp",
-                cursorAI: "image (10).webp",
-                // Images for "Our Websites" section
+
+                // Images for "Best AI Code Generation Tools", cycling through image (1).webp to image (10).webp
+                githubCopilot: "image (1).webp",
+                codeium: "image (2).webp",
+                amazonCodeWhisperer: "image (3).webp",
+                geminiCodeAssist: "image (4).webp",
+                cursor: "image (5).webp",
+                replitAI: "image (6).webp",
+                chatGPTCode: "image (7).webp",
+                codeLlama: "image (8).webp",
+                starCoder: "image (9).webp",
+                deepSeekCoder: "image (10).webp",
+                // If more items are added, they will cycle back to image (1).webp etc.
+
+                // Images for "Our Websites" section (unchanged)
                 wordoraWebsite: "website (1).webp",
                 bitaegirisWebsite: "website (2).webp",
                 mcfleetorgWebsite: "website (3).webp",
@@ -554,16 +565,17 @@
 
             // Map image IDs to their correct paths
             const imgElements = {
-                'codeLlama-image': allImages.codeLlama,
-                'starCoder-image': allImages.starCoder,
-                'codeGeeX-image': allImages.codeGeeX,
-                'deepSeekCoder-image': allImages.deepSeekCoder,
-                'replitAIFreeTier-image': allImages.replitAIFreeTier,
+                'githubCopilot-image': allImages.githubCopilot,
                 'codeium-image': allImages.codeium,
                 'amazonCodeWhisperer-image': allImages.amazonCodeWhisperer,
-                'geminiAI-image': allImages.geminiAI,
-                'chatGPT-image': allImages.chatGPT,
-                'cursorAI-image': allImages.cursorAI,
+                'geminiCodeAssist-image': allImages.geminiCodeAssist,
+                'cursor-image': allImages.cursor,
+                'replitAI-image': allImages.replitAI,
+                'chatGPT-code-image': allImages.chatGPTCode,
+                'codeLlama-image': allImages.codeLlama,
+                'starCoder-image': allImages.starCoder,
+                'deepSeekCoder-image': allImages.deepSeekCoder,
+
                 'wordora-image': allImages.wordoraWebsite,
                 'bitaegiris-image': allImages.bitaegirisWebsite,
                 'mcfleetorg-image': allImages.mcfleetorgWebsite,
@@ -571,14 +583,30 @@
                 'realgoalgo-image': allImages.realgoalgoWebsite
             };
 
-            for (const id in imgElements) {
-                const element = document.querySelector(`img[id="${id}"]`); // Select by id attribute
+            // Dynamically assign images for code generation tools
+            const codeToolIds = [
+                'githubCopilot', 'codeium', 'amazonCodeWhisperer', 'geminiCodeAssist',
+                'cursor', 'replitAI', 'chatGPTCode', 'codeLlama', 'starCoder', 'deepSeekCoder'
+            ];
+
+            codeToolIds.forEach((id, index) => {
+                const element = document.querySelector(`img[id="${id}-image"]`);
                 if (element) {
-                    element.src = imgElements[id];
+                    // Calculate index for cycling images 1-10
+                    const imageNumber = (index % 10) + 1;
+                    element.src = `image (${imageNumber}).webp`;
                 } else {
-                    console.warn(`Element with ID '${id}' not found, skipping image assignment.`);
+                    console.warn(`Element with ID '${id}-image' not found, skipping image assignment.`);
                 }
-            }
+            });
+
+
+            // Assign images for "Our Websites" section (explicitly, to ensure no changes)
+            document.querySelector('img[id="wordora-image"]').src = allImages.wordoraWebsite;
+            document.querySelector('img[id="bitaegiris-image"]').src = allImages.bitaegirisWebsite;
+            document.querySelector('img[id="mcfleetorg-image"]').src = allImages.mcfleetorgWebsite;
+            document.querySelector('img[id="wordoranetwork-image"]').src = allImages.wordoranetworkWebsite;
+            document.querySelector('img[id="realgoalgo-image"]').src = allImages.realgoalgoWebsite;
 
 
             // Smooth scroll for navigation links
